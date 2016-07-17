@@ -1,2 +1,7 @@
-# euler-problems
-The first 3 Project Euler problems solved using Javascript, and displayed using Bootstrap and jQuery
+# drawQuery
+Paint program using jQuery.
+
+- Set size and generate new canvas
+- Opacity Mode
+- Random Color Mode
+- Show/Hide Grid
