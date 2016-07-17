@@ -3,7 +3,7 @@
   font-family: monospace; }
 
 html {
-  background-image: url("/img/dark-grey-tile.png"); }
+  background-image: url("../img/dark-grey-tile.png"); }
 
 .logo-bar {
   display: -ms-flexbox;
