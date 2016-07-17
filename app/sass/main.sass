@@ -1,92 +1,234 @@
 
 *
   box-sizing: border-box
+  font-family: monospace
 
 html
-  background: black
+  background-image: url('/img/dark-grey-tile.png')
 
-.frame
-  width: 1100px
-  background-color: rgb(210, 24, 24)
-  padding: 1em 0 5em
-  margin: 0 auto
-  border-radius: 3.5em
+
+// LOGO
+.logo-bar
+  display: flex
+  justify-content: center
+  height: 100%
+  margin-top: 1em
+  min-width: 1150px
+  user-select: none
+
+.logo-wrapper
+  display: inline-block
+  min-width: 1150px
+  margin-left: 10.5em
   position: relative
 
+.logo
+  height: 60px
+  width: 60px
+  padding-top: 1em
+
+
 h1
+  font-size: 2.5em
+  font-family: 'Press Start 2P', cursive
+  color: white
+  display: inline-block
+  margin: 0 0 .7em .3em
+
+h3
+  margin: 0
+  font-family: 'Press Start 2P', cursive
+  font-size: .8em
+  color: white
+  display: inline
+  position: absolute
+  bottom: 7px
+  left: 100px
+
+
+// LAYOUT
+
+
+.frame
+  display: flex
+  margin-top: 1em
+  min-width: 1150px
+  align-items: center
+  justify-content: center
+  position: relative
+
+
+//TOOLBAR
+.toolbar
+  display: flex
+  flex-direction: column
+  margin: 0 1em
+  align-items: center
+  width: 10em
+
+// GRID OPTIONS
+.grid-options
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.grid-headline
+  color: white
+  font-size: 1.5em
+  margin: 1em 0
   text-align: center
-  font-size: 3.5em
-  font-family: monospace
-  color: gold
-  text-shadow: 2px 2px 2px black
+  user-select: none
+
 .form
-  text-align: center
-  margin-bottom: 2em
-  margin-top: 5em
+  display: flex
+  flex-direction: column
+  color: white
+  font-size: 1.2em
+  user-select: none
   input
     text-align: center
+    width: 3em
+    font-size: 1.2em
+    margin-bottom: .5em
+    user-select: none
+
+button
+  display: inline-block
+  margin-top: 1em
+  font-size: 1.1em
+  user-select: none
 
 
+
+// COLOR OPTIONS
+.color-options
+  text-align: center
+  display: flex
+  flex-wrap: wrap
+  width: 5em
+
+.color-headline
+  color: white
+  font-size: 1.5em
+  margin: .5em 0 1em
+  text-align: center
+  user-select: none
+
+.options
+  height: 2.2em
+  width: 2.2em
+  display: inline-block
+  border: 2px solid black
+  margin: .15em
+  &:active
+    border: 1px solid #2477C3
+    box-shadow: 0 0 15px #2477C3
+
+.black
+  background-color: black
+.white
+  background-color: white
+.red
+  background-color: rgb(210, 40, 40)
+.green
+  background-color: rgb(90, 195, 64)
+.blue
+  background-color: rgb(38, 123, 201)
+.erase
+  background-color: rgba(185, 185, 185, 1)
+.violet
+  background-color: rgb(113, 61, 210)
+.orange
+  background-color: rgb(224, 160, 64)
+.pink
+  background-color: rgb(255, 156, 248)
+.tan
+  background-color: rgb(222, 202, 163)
+.brown
+  background-color: rgb(112, 81, 53)
+.yellow
+  background-color: rgb(255, 233, 87)
+
+//MODE
+.mode-headline
+  color: white
+  font-size: 1.5em
+  margin: 1em 0
+  text-align: center
+  user-select: none
+
+.random
+  line-height: 0
+  text-align: left
+
+  #rand1
+    height: 50%
+    width: 50%
+    background-color: rgb(231, 140, 36)
+    display: inline-block
+    float: left
+
+  #rand2
+    height: 50%
+    width: 50%
+    background-color: rgb(90, 190, 103)
+    display: inline-block
+  #rand3
+    height: 50%
+    width: 50%
+    background-color: rgb(247, 228, 96)
+    display: inline-block
+    float: right
+
+  #rand4
+    height: 50%
+    width: 50%
+    background-color: rgb(205, 12, 154)
+    display: inline-block
+
+.opacity
+  line-height: 0
+  text-align: left
+
+  #op1
+    height: 50%
+    width: 50%
+    background-color: rgb(25,25,25)
+    display: inline-block
+    float: right
+
+  #op2
+    height: 50%
+    width: 50%
+    background-color: rgb(75, 75, 75)
+    display: inline-block
+  #op3
+    height: 50%
+    width: 50%
+    background-color: rgb(125, 125, 125)
+    display: inline-block
+    float: left
+
+  #op4
+    height: 50%
+    width: 50%
+    background-color: rgb(200, 200, 200)
+    display: inline-block
+
+
+// CONTAINER
 .container
   width: 960px
   height: 100%
-  margin: 0 auto
   line-height: 0
+  background-color: rgba(185, 185, 185, 1)
+  &:hover
+    cursor: crosshair
 
 .cell
   background-color: rgba(185, 185, 185, 1)
   display: none
-  border: 1px solid rgba(180, 180, 180, 1)
 
-.dial
-  background-color: white
-  width: 8em
-  height: 8em
-  border-radius: 100%
-  position: absolute
-  box-shadow: 4px 2px 7px black
-
-.dial-right
-  bottom: 2.5em
-  right: 3em
-
-.dial-left
-  bottom: 2.5em
-  left: 3em
-
-.options-panel
-  text-align: center
-
-.options
-  height: 2em
-  width: 2em
-  display: inline-block
-
-.black
-  background-color: black
-  border: none
-  z-index: 5
-.white
-  background-color: white
-  border: none
-.red
-  background-color: red
-  border: none
-.green
-  background-color: green
-  border: none
-.blue
-  background-color: blue
-  border: none
-.random
-  background-color: purple
-  border: none
-  display: none
-.opacity
-  background-color: gray
-  border: none
-  display: none
-.trail
-  background-color: magenta
-  border: none
-  display: none
+.selected
+  border: 1px solid #2477C3
+  box-shadow: 0 0 10px #2477C3

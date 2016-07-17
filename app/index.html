@@ -2,40 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Etch-A-Sketch</title>
-    <link rel="stylesheet" href="css/main.css" media="screen" charset="utf-8">
+  <meta charset="UTF-8">
+  <title>Etch-A-Sketch</title>
+  <link rel="stylesheet" href="css/main.css" media="screen" charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
 <body>
-    <div class="frame">
-        <h1>Etch-A-Sketch</h1>
+  <div class="logo-bar">
+  <div class="logo-wrapper">
+    <img src="/img/drawQuery-logo.png" class="logo" alt="drawn in drawQuery" />
+    <h1>drawQuery</h1>
+    <h3>write less, draw more.</h3>
+  </div>
+  </div>
+  <div class="frame">
 
-        <div class="container">
-
-        </div>
-
-        <div class="form">
-            <input class="inputGridSize" type="number" value="16">
-            <button class="generate">GENERATE</button>
-            <button>RESET</button>
-        </div>
-        <div class="options-panel">
+    <div class="toolbar">
+      <div class="color-options">
+        <div class="color-headline">COLOR</div>
         <div class="black options"></div>
         <div class="white options"></div>
-        <div class="red options"></div>
-        <div class="green options"></div>
         <div class="blue options"></div>
-        <div class="random options"></div>
-        <div class="opacity options"></div>
-        <div class="trail options"></div>
+        <div class="green options"></div>
+        <div class="yellow options"></div>
+        <div class="orange options"></div>
+        <div class="red options"></div>
+        <div class="violet options"></div>
+        <div class="pink options"></div>
+        <div class="tan options"></div>
+        <div class="brown options"></div>
+        <div class="erase options"></div>
+
+        <div class="mode-headline">MODES</div>
+
+        <div class="random options">
+          <div id="rand1"></div>
+          <div id="rand2"></div>
+          <div id="rand3"></div>
+          <div id="rand4"></div>
         </div>
-        <div class="dial dial-left"></div>
-        <div class="dial dial-right"></div>
+        <div class="opacity options">
+          <div id="op1"></div>
+          <div id="op2"></div>
+          <div id="op3"></div>
+          <div id="op4"></div>
+        </div>
+      </div>
+      <div class="grid-options">
+        <div class="grid-headline">GRID</div>
+        <div class="form">
+          Width
+          <input class="gridWidth" type="number" value="40" max="100" min="5" step="5"> Height
+          <input class="gridHeight" type="number" value="25" max="100" min="5" step="5">
+        </div>
+        <button class="generate">GENERATE</button>
+        <button class="showGrid">
+          SHOW GRID
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
 
     </div>
-    <script src='bower_components/jquery/dist/jquery.min.js'></script>
-    <script src="js/main.js"></script>
+  </div>
+  <script src='bower_components/jquery/dist/jquery.min.js'></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
